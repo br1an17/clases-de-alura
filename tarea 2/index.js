@@ -8,40 +8,42 @@
 
 // Pide al usuario que ingrese su nombre mediante un prompt. Luego, muestra una alerta de bienvenida usando ese nombre.
 
-// let dia = prompt("¿Que dia es Hoy?")
+let dia = prompt("¿Que dia es Hoy?");
 
-// if(dia == "sabado" || dia == "domingo"){
-//     alert("¡Buen fin de semana!")
-// }else{
-//     alert("¡Buena semana!")
-// }
+if (dia == "sabado" || dia == "domingo") {
+  alert("¡Buen fin de semana!");
+} else {
+  alert("¡Buena semana!");
+}
 
-// let numeroI = prompt("Ingrese un numero")
+let numeroI = prompt("Ingrese un numero");
 
-// if(numeroI > 0){
-//     alert("es positivo")
-// }else if(numeroI<0){
-// alert("es negativo")
-// }else{
-//     alert("es "+ numeroI)
-// }
+if (numeroI > 0) {
+  alert("es positivo");
+} else if (numeroI < 0) {
+  alert("es negativo");
+} else {
+  alert("es " + numeroI);
+}
 
-// let puntosGanadores = 101
+let puntosGanadores = 101;
 
-// let puntaje = prompt("Ingrese su puntaje")
+let puntaje = prompt("Ingrese su puntaje");
 
-// if(puntaje > puntosGanadores){
-//     alert("¡Felicidades, has ganado!")
-// }else{
-//     alert("Intentalo nuevamente para ganar. Le faltaron" + (puntosGanadores-puntaje)+" puntos")
-// }
+if (puntaje > puntosGanadores) {
+  alert("¡Felicidades, has ganado!");
+} else {
+  alert(
+    "Intentalo nuevamente para ganar. Le faltaron" +
+      (puntosGanadores - puntaje) +
+      " puntos"
+  );
+}
 
+let saldo = 200000;
 
-let saldo = 200000
+alert(`tu saldo es ${saldo}`);
 
-alert(`tu saldo es ${saldo}`)
+let nombre = prompt("ingrese su nombre");
 
-
-let nombre =prompt("ingrese su nombre")
-
-alert(`bienvenido ${nombre}`)
+alert(`bienvenido ${nombre}`);
