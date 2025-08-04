@@ -1,1 +1,1 @@
-Estas som las clasesde la carrera como desarrollador webde alura latam
+Estas som las clases de la carrera como desarrollador web de alura latam
