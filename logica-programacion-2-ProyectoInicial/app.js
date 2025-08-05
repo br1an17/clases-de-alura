@@ -1,7 +1,7 @@
 let intentos = 1;
 let input = document.getElementById("numeroElegido");
 let reinicio = document.getElementById("reiniciar");
-let numeroSecreto = generarNumeroSecreto();
+let numeroSecreto = 0;
 
 let textoMutable = (elemento, texto) => {
   document.querySelector(elemento).innerHTML = texto;
@@ -33,6 +33,7 @@ function adivinarNumero() {
     intentos++;
     textoMutable("h1", "Lo siento, no adivinaste el numero secreto");
     input.value = "";
+    input.focus();
     if (numeroElegido > numeroSecreto) {
       textoMutable("p", "El numero secreto es menor que " + numeroElegido);
     } else {
@@ -40,14 +41,17 @@ function adivinarNumero() {
     }
   }
 }
-function reiniciar() {
-  numeroSecreto = generarNumeroSecreto();
+
+function iniciar() {
   intentos = 1;
+  numeroSecreto = generarNumeroSecreto();
   textoMutable("h1", "Juego de adivinar el número");
   textoMutable("p", "Elige un número entre 1 y 10");
   input.disabled = false;
   input.value = "";
+  reinicio.disabled = true;
+  input.focus();
 }
 
-textoMutable("h1", "Juego de adivinar el número");
-textoMutable("p", "Elige un número entre 1 y 10");
+iniciar();
+
