@@ -6,7 +6,7 @@ function hola() {
 // Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
 
 function nombre(name) {
-  console.log(`hola ${name}`);
+  console.log(`¡Hola ${name}!`);
 }
 
 // Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
