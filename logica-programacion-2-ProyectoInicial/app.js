@@ -16,10 +16,15 @@ function generarNumeroSecreto() {
 function adivinarNumero() {
   let numeroElegido = elegirNumero();
   if (numeroElegido === numeroSecreto) {
-    alert("Felicidades, has adivinado el numero");
-  } else {
-    alert("Lo siento, intenta de nuevo");
-    textoMutable("p", "Elije otro numero entre 1 y 10");
+    textoMutable("h1", "Felicidades, adivinaste el numero secreto");
+    textoMutable("p", "El numero secreto era: " + numeroSecreto);
+  } else if( numeroElegido > numeroSecreto) {
+    textoMutable("h1", "Lo siento, no adivinaste el numero secreto");
+    textoMutable("p", "El numero secreto es menor que " + numeroElegido);
+    document.getElementById("numeroElegido").value = "";
+  } else if( numeroElegido < numeroSecreto) {
+    textoMutable("h1", "Lo siento, no adivinaste el numero secreto");
+    textoMutable("p", "El numero secreto es mayor que " + numeroElegido);
     document.getElementById("numeroElegido").value = "";
   }
 }
