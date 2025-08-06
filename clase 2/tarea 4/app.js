@@ -19,6 +19,15 @@ return resultado;
 factorial(5);
 // Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor equivalente en reales(moneda brasileña,si deseas puedes hacerlo con el valor del dólar en tu país). Para esto, considera la cotización del dólar igual a R$4,80.
 
+let valor= parseInt(prompt("INGRESE EL VALOR EN DOLARES"))
+
+
+function cambio (valor) {
+  let cotizacion = 4.80;
+  let resultado = valor * cotizacion;
+  return resultado;
+}
+console.log("El valor en reales es: " + cambio(valor));
 
 
 // Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular, utilizando la altura y la anchura que se proporcionarán como parámetros.
