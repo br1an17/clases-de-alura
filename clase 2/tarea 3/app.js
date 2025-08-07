@@ -1,42 +1,60 @@
-// Crear una función que muestre "¡Hola, mundo!" en la consola.
+// Crea una función que calcule el índice de masa corporal (IMC) de una persona a partir de su altura en metros y peso en kilogramos, que se recibirán como parámetros.
 
-function hola() {
-  console.log("¡Hola, mundo!");
-}
-// Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
+let indiceDeMasa = (peso, kilos) => {
+  return (peso + kilos) / 2;
+};
 
-function nombre(name) {
-  console.log(`¡Hola ${name}!`);
-}
+// Crea una función que calcule el valor del factorial de un número pasado como parámetro.
 
-// Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
-
-function doble(num) {
-  return num * 2;
-}
-
-// Crear una función que reciba tres números como parámetros y devuelva su promedio.
-
-function promedio(a, b, c) {
-  if (typeof a === "number" && typeof b === "number" && typeof c === "number") {
-    return (a + b + c) / 3;
-  } else {
-    alert("ingrese 3 numeros por favor");
+let factorial = (n) => {
+  let resultado = 1;
+ 
+for (let i = 1; i <= n; i++) {
+    resultado = resultado * i;
   }
+return resultado;
+
+  };
+
+factorial(5);
+// Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor equivalente en reales(moneda brasileña,si deseas puedes hacerlo con el valor del dólar en tu país). Para esto, considera la cotización del dólar igual a R$4,80.
+
+let valor= parseInt(prompt("INGRESE EL VALOR EN DOLARES"))
+
+
+function cambio (valor) {
+  let cotizacion = 4.80;
+  let resultado = valor * cotizacion;
+  return resultado;
+}
+console.log("El valor en reales es: " + cambio(valor));
+
+
+// Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular, utilizando la altura y la anchura que se proporcionarán como parámetros.
+
+function area () {
+  let altura = parseInt(prompt("Ingrese la altura de la sala:"));
+  let anchura = parseInt(prompt("Ingrese la anchura de la sala:"));
+  
+  let area = altura * anchura;
+  let perimetro = 2 * (altura + anchura);
+  
+  console.log("El área de la sala es: " + area);
+  console.log("El perímetro de la sala es: " + perimetro);
+  
 }
 
-// Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.
+// Crea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
 
-function mayor(numA, numB) {
-  if (numA > numB) {
-    return numA;
-  } else {
-    return numB;
-  }
+function areaCircular() {
+   let radio = parseInt(prompt("Ingrese la altura de la sala:"));
+  let area = 3.14 * radio * radio;
+  let perimetro = 2 * 3.14 * radio;  
+ 
+  
+  console.log("El área del circulo es: " + area);
+  console.log("El perímetro del  circulo es: " + perimetro);
 }
 
-// Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
 
-function elevacion(numero) {
-    return numero * numero;
-}
+// Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.
