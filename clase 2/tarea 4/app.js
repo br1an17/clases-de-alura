@@ -88,21 +88,18 @@ function listas(a, b) {
     for (let i = 0; i < a.length; i++) {
       lista.push(a[i] + b[i]);
     }
-    return lista
-  }else{
-    console.log("las lisas tienen que ser del mismo tamaño")
+    return lista;
+  } else {
+    console.log("las lisas tienen que ser del mismo tamaño");
   }
 }
 // Crea una función que reciba una lista de números y devuelva una nueva lista con el cuadrado de cada número.
 
 function alCuadrado(array) {
-let lista = [];
+  let lista = [];
 
-    for (let i = 0; i < array.length; i++) {
-         
-        lista.push( array[i] * array[i])
-        
-    }
-    console.log (lista)
+  for (let i = 0; i < array.length; i++) {
+    lista.push(array[i] * array[i]);
+  }
+  console.log(lista);
 }
-alCuadrado([12,2,3])
