@@ -32,7 +32,17 @@ console.log("El valor en reales es: " + cambio(valor));
 
 // Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular, utilizando la altura y la anchura que se proporcionarán como parámetros.
 
-
+function area () {
+  let altura = parseInt(prompt("Ingrese la altura de la sala:"));
+  let anchura = parseInt(prompt("Ingrese la anchura de la sala:"));
+  
+  let area = altura * anchura;
+  let perimetro = 2 * (altura + anchura);
+  
+  console.log("El área de la sala es: " + area);
+  console.log("El perímetro de la sala es: " + perimetro);
+  
+}
 
 // Crea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
 
