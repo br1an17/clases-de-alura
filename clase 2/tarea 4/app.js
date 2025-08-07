@@ -60,15 +60,49 @@ let buscarMenorYMayor = (array) => {
 let sumados = (array) => {
   let total = 0;
   for (let i = 0; i < array.length; i++) {
-
- total += array[i]
-
-}
-console.log(total)
+    total += array[i];
+  }
+  console.log(total);
 };
 
 // Crea una función que devuelva la posición en la lista donde se encuentra un elemento pasado como parámetro, o -1 si no existe en la lista.
 
+let lista = [1, 2, 3, 4, 5];
+
+function pasado(n) {
+  let numero = -1; // Inicializamos numero como -1
+  for (let i = 0; i < lista.length; i++) {
+    if (n == lista[i]) {
+      numero = n;
+      break;
+    }
+  }
+  console.log(numero);
+}
+
 // Crea una función que reciba dos listas de números del mismo tamaño y devuelva una nueva lista con la suma de los elementos uno a uno.
 
+function listas(a, b) {
+  if (a.length == b.length) {
+    let lista = [];
+    for (let i = 0; i < a.length; i++) {
+      lista.push(a[i] + b[i]);
+    }
+    return lista
+  }else{
+    console.log("las lisas tienen que ser del mismo tamaño")
+  }
+}
 // Crea una función que reciba una lista de números y devuelva una nueva lista con el cuadrado de cada número.
+
+function alCuadrado(array) {
+let lista = [];
+
+    for (let i = 0; i < array.length; i++) {
+         
+        lista.push( array[i] * array[i])
+        
+    }
+    console.log (lista)
+}
+alCuadrado([12,2,3])
