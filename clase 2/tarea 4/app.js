@@ -20,29 +20,52 @@ let elementos = (array) => {
 
 // Crea una función que muestre en la consola todos los elementos de la lista "lenguagesDeProgramacion en orden inverso.
 let elementosAlReves = (array) => {
-  for (let i = array.length-1; i >= 0; i--) {
+  for (let i = array.length - 1; i >= 0; i--) {
     console.log(array[i]);
   }
 };
 
-
 // Crea una función que calcule el promedio de los elementos en una lista de números.
 
 let promedio = (array) => {
+  let numeroFinal = 0;
 
-    let numeroFinal = 0;
+  for (let i = 0; i < array.length; i++) {
+    numeroFinal += array[i];
+  }
+  console.log(numeroFinal / array.length);
+};
 
-    for (let i = 0; i < array.length; i++) {
-
-         numeroFinal += array[i];
-        
-        }
-        console.log(numeroFinal/array.length)
-}
-promedio([1,2,3,4,5,6])
 // Crea una función que muestre en la consola el número más grande y el número más pequeño en una lista.
 
+let buscarMenorYMayor = (array) => {
+  let menor = array[0];
+  let mayor = array[0];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > mayor) {
+      mayor = array[i];
+    }
+    if (array[i] < menor) {
+      menor = array[i];
+    }
+  }
+
+  console.log(menor);
+  console.log(mayor);
+};
+
 // Crea una función que devuelva la suma de todos los elementos en una lista.
+
+let sumados = (array) => {
+  let total = 0;
+  for (let i = 0; i < array.length; i++) {
+
+ total += array[i]
+
+}
+console.log(total)
+};
 
 // Crea una función que devuelva la posición en la lista donde se encuentra un elemento pasado como parámetro, o -1 si no existe en la lista.
 
