@@ -1,10 +1,16 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
+const amigos = [];
 
-const agregarAmigo = (params) => {
-    alert("añadir")
-}
 
-const sortearAmigo = (params) => {
-    alert("sortear")
-}
+
+const agregarAmigo = () => {
+
+let amigo = document.getElementById("amigo").value
+  amigos.push(amigo)
+  console.log(amigos)
+};
+
+const sortearAmigo = () => {
+  alert("sortear");
+};
