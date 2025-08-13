@@ -6,9 +6,9 @@ const amigos = [];
 
 const agregarAmigo = () => {
 
-let amigo = document.getElementById("amigo").value
+let amigo = document.getElementById("amigo")
   amigos.push(amigo)
-  console.log(amigos)
+  console.log(amigo)
 };
 
 const sortearAmigo = () => {
