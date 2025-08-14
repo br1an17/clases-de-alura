@@ -2,6 +2,9 @@
 
 let amigos = [];
 
+let textoMutable = (elemento, texto) => {
+  document.querySelector(elemento).innerHTML = texto;
+};
 
 
 const agregarAmigo = () => {
@@ -12,10 +15,14 @@ const agregarAmigo = () => {
 };
 
 const sortearAmigo = () => {
-  console.log(amigos)
-let num = Math.floor(Math.random()+(amigos.length -1)) 
-console.log(Math.random()+(amigos.length -1))
-console.log(num)
-
-  alert("sortear");
+let num = Math.floor(Math.random() * amigos.length)
+  let amigoSorteado = amigos[num]
+  console.log(amigos.length);
+  if (amigos.length === 0) {
+    textoMutable("h2", "No hay amigos para sortear");
+    return;
+  }
+  
+textoMutable("h2", `El amigo sorteado es: ${amigoSorteado}`);
 };
+
