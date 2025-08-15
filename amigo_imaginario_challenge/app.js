@@ -30,8 +30,9 @@ const sortearAmigo = () => {
   let num = Math.floor(Math.random() * amigos.length);
   let amigoSorteado = amigos[num];
   console.log(amigos.length);
-  if (amigos.length === 0) {
+  if (amigos.length == 0) {
     textoMutable("h2", "No hay amigos para sortear");
+    return;
   }
   if (amigos.length === 1) {
     textoMutable("h2", "Solo hay un amigo, no se puede sortear");
