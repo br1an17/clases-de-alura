@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+color: white;
+}
+strong{
+    color: #22D4FD;
+}
+button{
+    background-color: #22D4FD;
+    color:black;
+    border-radius: 6px;
+    border: none;
+    width: 280px;
+    height: 80px;
+}
+
