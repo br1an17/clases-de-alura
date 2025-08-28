@@ -1,21 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-color: white;
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-strong{
-    color: #22D4FD;
+.resaltado {
+  color: #22d4fd;
 }
-button{
-    background-color: #22D4FD;
-    color:black;
-    border-radius: 6px;
-    border: none;
-    width: 280px;
-    height: 80px;
+strong {
+  color: #2234fd;
 }
-
+/* button {
+  background-color: #22d4fd;
+  color: black;
+  border-radius: 6px;
+  border: none;
+  width: 280px;
+  height: 80px;
+} */
