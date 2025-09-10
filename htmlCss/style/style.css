@@ -3,10 +3,17 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --color-primario: #22d4fd;
+  --color-secundario: #f6f6f6;
+  --colo-terciario: #000000;
+  --fuente-principal: "Krona One", sans-serif;
+  --fuente-secundaria: "Montserrat", sans-serif;
+}
 
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--colo-terciario);
+  color: var(--color-secundario);
   box-sizing: border-box;
 }
 .contenedor {
@@ -17,38 +24,36 @@ body {
 }
 .contenido {
   width: 615px;
- margin: 50px;
+  margin: 50px;
 }
-.header{
-background-color: #22d4fd;
-padding: 23px;
+.header {
+  background-color: var(--color-primario);
+  padding: 23px;
 }
-.navegacion{
+.navegacion {
   display: flex;
   justify-content: space-around;
-
 }
 
-
-.navegacion__enlace{
-font-family: "montserrat", sans-serif;
-font-size: 24px;
-font-weight: 600;
-color:#f6f6f6;
-text-decoration: none;
+.navegacion__enlace {
+  font-family: var(--fuente-principal);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-secundario);
+  text-decoration: none;
 }
 
 .titulo {
   font-size: 36px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--fuente-principal)
 }
 .parrafo {
   font-size: 26px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fuente-secundaria);
 }
 
 .resaltado {
-  color: #22d4fd;
+  color: var(--color-primario);
 }
 .botones {
   margin-top: 20px;
@@ -59,7 +64,7 @@ text-decoration: none;
   gap: 20px;
 }
 .presentacion_redes {
-  font-family: "krona one", sans-serif;
+  font-family: var(--fuente-principal);
   font-size: 24px;
   font-weight: 400;
 }
@@ -71,31 +76,31 @@ text-decoration: none;
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
-  color: #f6f6f6;
-  font-family: "krona one", sans-serif;
-  border: 2px solid #22b4fb;
+  color: var(--color-secundario);
+  font-family: var(--fuente-principal);
+  border: 2px solid var(--color-primario);
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 .boton:hover {
-  background-color: #22b4fb;
+  background-color: var(--color-primario);
   transition: 0.3s;
 }
-.parrafo strong:hover{
-  color: #22d4fd;
+.parrafo strong:hover {
+  color: var();
   cursor: pointer;
-} 
-.navegacion__enlace:hover{
-  color: #22d4fd;
+}
+.navegacion__enlace:hover {
+  color: black;
   cursor: pointer;
   transition: 0.3s;
 }
 footer {
-  background-color: #22d4fd;
+  background-color: var(--color-primario);
   text-align: center;
   padding: 24px;
-  font-family: "krona one", sans-serif;
+  font-family: var(--fuente-principal);
   font-size: 14px;
-  color: #f6f6f6
+  color: var(--color-secundario);
 }
