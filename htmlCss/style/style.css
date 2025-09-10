@@ -7,18 +7,37 @@
 body {
   background-color: black;
   color: white;
-  height: 100vh;
   box-sizing: border-box;
 }
 .contenedor {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10%;
+  padding: 2% 15%;
 }
 .contenido {
   width: 615px;
+ margin: 50px;
 }
+.header{
+background-color: #22d4fd;
+padding: 23px;
+}
+.navegacion{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.navegacion__enlace{
+font-family: "montserrat", sans-serif;
+font-size: 24px;
+font-weight: 600;
+color:#f6f6f6;
+text-decoration: none;
+}
+
 .titulo {
   font-size: 36px;
   font-family: "Krona One", sans-serif;
@@ -32,6 +51,7 @@ body {
   color: #22d4fd;
 }
 .botones {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -52,9 +72,30 @@ body {
   padding: 21.5px 0;
   text-decoration: none;
   color: #f6f6f6;
-  font-family: "Montserrat", sans-serif;
+  font-family: "krona one", sans-serif;
   border: 2px solid #22b4fb;
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.boton:hover {
+  background-color: #22b4fb;
+  transition: 0.3s;
+}
+.parrafo strong:hover{
+  color: #22d4fd;
+  cursor: pointer;
+} 
+.navegacion__enlace:hover{
+  color: #22d4fd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer {
+  background-color: #22d4fd;
+  text-align: center;
+  padding: 24px;
+  font-family: "krona one", sans-serif;
+  font-size: 14px;
+  color: #f6f6f6
 }
