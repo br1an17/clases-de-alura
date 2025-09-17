@@ -104,3 +104,22 @@ footer {
   font-size: 14px;
   color: var(--color-secundario);
 }
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    padding: 2% 5%;
+    gap: 20px;
+  }
+  .contenido {
+    width: 100%;
+    margin: 0;
+  }
+  .botones {
+    width: 100%;
+  }
+  .boton {
+    width: 100%;
+  }
+  
+}
