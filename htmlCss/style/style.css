@@ -56,12 +56,11 @@ body {
 }
 
 .titulo {
-   font-size: clamp(1.6rem, 4vw, 2.4rem); 
-  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
   font-family: var(--fuente-principal)
 }
 .parrafo {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-family: var(--fuente-secundaria);
 }
 
@@ -78,23 +77,29 @@ body {
 }
 .presentacion_redes {
   font-family: var(--fuente-principal);
-  font-size: 24px;
-  font-weight: 400;
+  font-size: clamp(1rem, 3vw, 1.3rem);
 }
 .boton {
-  width: 378px;
+    max-width: 300px;
+  width: 100%;
   text-align: center;
   border-radius: 8px;
-  font-size: 24px;
+   font-size: 1rem;
   font-weight: 600;
-  padding: 21.5px 0;
+ padding: 12px;
   text-decoration: none;
   color: var(--color-secundario);
   font-family: var(--fuente-principal);
   border: 2px solid var(--color-primario);
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+
+}
+
+
+
+.boton img {
+  width: 24px;   
+  height: 24px;
+  object-fit: contain;
 }
 .boton:hover {
   background-color: var(--color-primario);
@@ -123,15 +128,12 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 20px;
-    gap: 30px;
-  }
-   .botones {
-    width: 100%;
+    gap: 20px;
   }
 
-  .boton {
-    width: 100%;
-    max-width: 320px;
+  .botones {
+    gap: 15px;
   }
-  
 }
+  
+
